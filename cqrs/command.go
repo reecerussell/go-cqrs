@@ -18,7 +18,7 @@ type Command interface {
 	Execute(ctx context.Context) error
 }
 
-// Command is an interface used to perform a write operation or perform an action,
+// CommandWithValue is an interface used to perform a write operation or perform an action,
 // similar to Command, however, on execute a value is returned.
 type CommandWithValue interface {
 	CommandBase
